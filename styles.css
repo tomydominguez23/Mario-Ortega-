@@ -331,6 +331,11 @@ h1 {
   gap: 1rem;
 }
 
+.upcoming-grid.single {
+  grid-template-columns: minmax(280px, 420px);
+  justify-content: center;
+}
+
 .upcoming-card {
   background: #ffffff;
   border: 1px solid var(--line);
