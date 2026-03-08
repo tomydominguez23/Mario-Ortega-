@@ -384,6 +384,19 @@ h1 {
   margin-bottom: 0.45rem;
 }
 
+.launch-timer {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 0.55rem;
+  border-radius: 999px;
+  background: #fff5e7;
+  border: 1px solid #f0d8b4;
+  color: #995a19;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.24rem 0.6rem;
+}
+
 .upcoming-info a {
   color: #7f4f17;
   text-decoration: none;
