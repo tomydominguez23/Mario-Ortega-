@@ -321,6 +321,75 @@ h1 {
   background: var(--accent);
 }
 
+.upcoming-launches {
+  margin-top: 1.4rem;
+}
+
+.upcoming-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.upcoming-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(26, 37, 52, 0.08);
+}
+
+.upcoming-cover {
+  position: relative;
+  background: #0f1725;
+}
+
+.upcoming-cover img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.launch-badge {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.7rem;
+  z-index: 2;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: #ffffff;
+  background: #e4583d;
+  box-shadow: 0 8px 18px rgba(228, 88, 61, 0.35);
+}
+
+.launch-badge.secondary {
+  background: #b86adf;
+  box-shadow: 0 8px 18px rgba(184, 106, 223, 0.35);
+}
+
+.launch-badge.dark {
+  background: #182135;
+  box-shadow: 0 8px 18px rgba(24, 33, 53, 0.35);
+}
+
+.upcoming-info {
+  padding: 0.85rem 0.9rem 0.95rem;
+}
+
+.upcoming-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.45rem;
+}
+
+.upcoming-info a {
+  color: #7f4f17;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 .books-section {
   padding: 3rem 0 1.5rem;
 }
@@ -760,6 +829,10 @@ h1 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .upcoming-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .theme-grid {
     grid-template-columns: 1fr;
   }
@@ -795,6 +868,10 @@ h1 {
   }
 
   .books-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-grid {
     grid-template-columns: 1fr;
   }
 
