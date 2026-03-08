@@ -102,6 +102,14 @@ img {
   padding: 1.4rem 0 1.5rem;
 }
 
+.hero-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+  gap: 1.2rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.22em;
@@ -126,6 +134,64 @@ h1 {
   max-width: 650px;
   margin: 0.9rem 0 1.8rem;
   color: var(--muted);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: var(--text);
+  border: 1px solid var(--line);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.hero-metrics {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.hero-metrics article {
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.85rem 0.95rem;
+}
+
+.hero-metrics strong {
+  display: block;
+  font-size: 1.5rem;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.hero-metrics span {
+  color: var(--muted);
+  font-size: 0.92rem;
 }
 
 .hero-carousel {
@@ -239,6 +305,24 @@ h1 {
   padding: 3rem 0 1.5rem;
 }
 
+.store-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--bg-soft);
+  padding: 0.9rem 1rem;
+  margin-bottom: 1.1rem;
+}
+
+.store-banner p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .section-heading p {
   color: var(--muted);
   margin-top: 0.7rem;
@@ -281,6 +365,12 @@ h1 {
   margin: 0;
 }
 
+.book-hook {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
 .buy-link {
   margin-top: auto;
   display: inline-flex;
@@ -304,6 +394,12 @@ h1 {
   padding: 2.3rem 0 3.2rem;
 }
 
+.bio-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1rem;
+}
+
 .bio-section h2 {
   margin-bottom: 0.65rem;
 }
@@ -311,6 +407,50 @@ h1 {
 .bio-section p {
   color: var(--muted);
   max-width: 760px;
+}
+
+.value-card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--bg-soft);
+  padding: 1rem;
+}
+
+.value-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.value-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+.value-card li + li {
+  margin-top: 0.45rem;
+}
+
+.final-cta {
+  padding: 0 0 2.7rem;
+}
+
+.final-cta-content {
+  background: linear-gradient(120deg, #f6ede2 0%, #f6f8fb 100%);
+  border: 1px solid #ead7bc;
+  border-radius: 18px;
+  padding: 2rem 1.2rem;
+  text-align: center;
+}
+
+.final-cta-content h2 {
+  font-size: clamp(1.7rem, 3.2vw, 2.7rem);
+}
+
+.final-cta-content p {
+  margin: 0.65rem auto 1.2rem;
+  color: var(--muted);
+  max-width: 700px;
 }
 
 .site-footer {
@@ -325,9 +465,36 @@ h1 {
   font-size: 0.9rem;
 }
 
+.floating-buy {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 30;
+  text-decoration: none;
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.78rem 1rem;
+  box-shadow: 0 12px 25px rgba(197, 142, 80, 0.35);
+}
+
+.floating-buy:hover,
+.floating-buy:focus {
+  opacity: 0.92;
+}
+
 @media (max-width: 1000px) {
+  .hero-top {
+    grid-template-columns: 1fr;
+  }
+
   .books-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .bio-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -348,8 +515,23 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .store-banner {
+    align-items: stretch;
+  }
+
   .carousel-btn {
     width: 40px;
     height: 40px;
+  }
+
+  .floating-buy {
+    left: 0.9rem;
+    right: 0.9rem;
+    text-align: center;
   }
 }
