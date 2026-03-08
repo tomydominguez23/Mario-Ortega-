@@ -1,11 +1,11 @@
 :root {
-  --bg: #0f141b;
-  --bg-soft: #171d26;
-  --text: #edf1f7;
-  --muted: #b2bccd;
-  --accent: #d7b88c;
-  --card: #1c2430;
-  --line: #2f3a4a;
+  --bg: #ffffff;
+  --bg-soft: #f6f8fb;
+  --text: #1d2735;
+  --muted: #5b6879;
+  --accent: #c58e50;
+  --card: #ffffff;
+  --line: #e1e7ef;
 }
 
 *,
@@ -22,7 +22,7 @@ body {
 
 body {
   font-family: "Inter", sans-serif;
-  background: linear-gradient(180deg, #0b1016 0%, #111926 55%, #0f141b 100%);
+  background: var(--bg);
   color: var(--text);
   line-height: 1.5;
 }
@@ -41,9 +41,9 @@ img {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(10, 14, 20, 0.75);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid #e7edf5;
 }
 
 .header-content {
@@ -99,7 +99,7 @@ img {
 }
 
 .hero-section {
-  padding: 2.4rem 0 1.5rem;
+  padding: 1.4rem 0 1.5rem;
 }
 
 .eyebrow {
@@ -130,16 +130,17 @@ h1 {
 
 .hero-carousel {
   position: relative;
-  width: min(1200px, 94%);
-  margin: 0 auto;
-  border-radius: 20px;
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-top: 1px solid #dde4ee;
+  border-bottom: 1px solid #dde4ee;
 }
 
 .carousel-track {
   position: relative;
-  min-height: clamp(340px, 56vw, 640px);
+  min-height: clamp(320px, 42vw, 560px);
 }
 
 .hero-slide {
@@ -159,8 +160,8 @@ h1 {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(3, 6, 10, 0.25) 0%,
-    rgba(8, 12, 18, 0.72) 78%
+    rgba(8, 14, 24, 0.1) 10%,
+    rgba(8, 14, 24, 0.66) 82%
   );
 }
 
@@ -185,7 +186,7 @@ h1 {
 
 .slide-caption p {
   margin: 0;
-  color: #d9e1ee;
+  color: #edf1f7;
 }
 
 .carousel-btn {
@@ -195,9 +196,9 @@ h1 {
   width: 46px;
   height: 46px;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  background: rgba(0, 0, 0, 0.3);
-  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.72);
+  color: #1d2735;
   cursor: pointer;
   z-index: 3;
 }
@@ -211,7 +212,7 @@ h1 {
 }
 
 .carousel-btn:hover {
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .hero-dots {
@@ -226,7 +227,7 @@ h1 {
   height: 10px;
   border: none;
   border-radius: 999px;
-  background: #5b6678;
+  background: #c2cddd;
   cursor: pointer;
 }
 
@@ -258,6 +259,7 @@ h1 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 10px 25px rgba(26, 37, 52, 0.08);
 }
 
 .book-card img {
@@ -286,7 +288,7 @@ h1 {
   justify-content: center;
   text-decoration: none;
   background: var(--accent);
-  color: #151515;
+  color: #ffffff;
   font-weight: 600;
   border-radius: 9px;
   padding: 0.58rem 0.8rem;
@@ -312,14 +314,14 @@ h1 {
 }
 
 .site-footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid #e7edf5;
 }
 
 .site-footer p {
   margin: 0;
   padding: 1.5rem 0;
   text-align: center;
-  color: #95a2b8;
+  color: #7a8798;
   font-size: 0.9rem;
 }
 
