@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mario Ortega | Sitio oficial</title>
+    <meta
+      name="description"
+      content="Sitio oficial de Mario Ortega, escritor de novela histórica y thriller."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a href="#" class="brand">
+          <span class="brand-mark">MO</span>
+          <span class="brand-text">Mario Ortega</span>
+        </a>
+        <nav aria-label="Principal">
+          <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#libros">Libros</a></li>
+            <li><a href="#biografia">Biografía</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <section class="hero-section">
+        <div class="container">
+          <p class="eyebrow">Sitio oficial</p>
+          <h1>MARIO ORTEGA</h1>
+          <p class="intro-copy">
+            Narrador de historias donde la memoria, el poder y la aventura se
+            cruzan en cada página.
+          </p>
+        </div>
+
+        <div class="hero-carousel" aria-label="Carrusel de imágenes destacadas">
+          <button class="carousel-btn prev" data-action="prev" aria-label="Imagen anterior">
+            &#10094;
+          </button>
+
+          <div class="carousel-track" id="heroTrack">
+            <article class="hero-slide is-active">
+              <img
+                src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1800&q=80"
+                alt="Mesa con libros abiertos y una lámpara cálida"
+              />
+              <div class="slide-caption">
+                <h2>La literatura como viaje</h2>
+                <p>Crónicas, novela y ensayo con mirada crítica.</p>
+              </div>
+            </article>
+            <article class="hero-slide">
+              <img
+                src="https://images.unsplash.com/photo-1455885666463-9a8f7b37f74f?auto=format&fit=crop&w=1800&q=80"
+                alt="Escritorio de madera con cuaderno y pluma"
+              />
+              <div class="slide-caption">
+                <h2>Historias con pulso contemporáneo</h2>
+                <p>Personajes intensos frente a dilemas morales.</p>
+              </div>
+            </article>
+            <article class="hero-slide">
+              <img
+                src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1800&q=80"
+                alt="Estantería de biblioteca con libros antiguos"
+              />
+              <div class="slide-caption">
+                <h2>Del archivo a la ficción</h2>
+                <p>Novela histórica con ritmo de thriller.</p>
+              </div>
+            </article>
+          </div>
+
+          <button class="carousel-btn next" data-action="next" aria-label="Siguiente imagen">
+            &#10095;
+          </button>
+        </div>
+        <div class="hero-dots" id="heroDots" aria-label="Selector de imágenes"></div>
+      </section>
+
+      <section class="books-section container" id="libros">
+        <div class="section-heading">
+          <p class="eyebrow">Libros</p>
+          <h2>Obras de Mario Ortega Wiedmaier</h2>
+          <p>
+            Selección de títulos disponibles en Amazon con enlace directo de
+            compra.
+          </p>
+        </div>
+
+        <div class="books-grid" aria-label="Libros de Mario Ortega Wiedmaier">
+          <article class="book-card">
+            <img
+              src="https://m.media-amazon.com/images/I/71iGGDBNnEL._SY342_.jpg"
+              alt="Portada de Somos Leyenda"
+            />
+            <div class="book-info">
+              <h3>Somos Leyenda</h3>
+              <a
+                class="buy-link"
+                href="https://www.amazon.com/dp/B0DWY2ZTLN?language=es"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Comprar en Amazon</a
+              >
+            </div>
+          </article>
+
+          <article class="book-card">
+            <img
+              src="https://m.media-amazon.com/images/I/71MgsUpYMJL._SY342_.jpg"
+              alt="Portada de Miguel Serrano El Mago del Tiempo"
+            />
+            <div class="book-info">
+              <h3>Miguel Serrano El Mago del Tiempo</h3>
+              <a
+                class="buy-link"
+                href="https://www.amazon.com/dp/B09FDC7GX5?language=es"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Comprar en Amazon</a
+              >
+            </div>
+          </article>
+
+          <article class="book-card">
+            <img
+              src="https://m.media-amazon.com/images/I/A1YuOI0ZrGL._SY342_.jpg"
+              alt="Portada de Separado entre dos mundos"
+            />
+            <div class="book-info">
+              <h3>Separado entre dos mundos</h3>
+              <a
+                class="buy-link"
+                href="https://www.amazon.com/dp/B078JC4MRJ?language=es"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Comprar en Amazon</a
+              >
+            </div>
+          </article>
+
+          <article class="book-card">
+            <img
+              src="https://m.media-amazon.com/images/I/71bETGYcbYL._SY342_.jpg"
+              alt="Portada de El Explorador"
+            />
+            <div class="book-info">
+              <h3>El Explorador</h3>
+              <a
+                class="buy-link"
+                href="https://www.amazon.com/dp/B07C7PXKWJ?language=es"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Comprar en Amazon</a
+              >
+            </div>
+          </article>
+
+          <article class="book-card">
+            <img
+              src="https://m.media-amazon.com/images/I/51usyv1rk4L._SY342_.jpg"
+              alt="Portada de Más allá del viento"
+            />
+            <div class="book-info">
+              <h3>Más allá del viento</h3>
+              <a
+                class="buy-link"
+                href="https://www.amazon.com/dp/B078JD9KND?language=es"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Comprar en Amazon</a
+              >
+            </div>
+          </article>
+
+          <article class="book-card">
+            <img
+              src="https://m.media-amazon.com/images/I/61pS0AprR1L._SY342_.jpg"
+              alt="Portada de Traspasando el infinito"
+            />
+            <div class="book-info">
+              <h3>Traspasando el infinito</h3>
+              <a
+                class="buy-link"
+                href="https://www.amazon.com/dp/B078JM5LXK?language=es"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Comprar en Amazon</a
+              >
+            </div>
+          </article>
+
+          <article class="book-card">
+            <img
+              src="https://m.media-amazon.com/images/I/61skk1ArZFL._SY342_.jpg"
+              alt="Portada de El Gran Engaño a la Humanidad"
+            />
+            <div class="book-info">
+              <h3>El Gran Engaño a la Humanidad</h3>
+              <a
+                class="buy-link"
+                href="https://www.amazon.com/dp/B07FYTDPGW?language=es"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Comprar en Amazon</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="bio-section container" id="biografia">
+        <h2>Biografía</h2>
+        <p>
+          Mario Ortega (Madrid, 1975) es novelista y articulista. Su obra combina
+          documentación rigurosa con una prosa ágil y personajes memorables. Ha
+          publicado en medios culturales y participado en festivales literarios
+          internacionales.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contacto">
+      <div class="container">
+        <p>© 2026 Mario Ortega · Sitio oficial</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
