@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mario Ortega | Sitio oficial</title>
+    <meta
+      name="description"
+      content="Sitio oficial de Mario Ortega, escritor de novela histórica y thriller."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a href="#" class="brand">
+          <span class="brand-mark">MO</span>
+          <span class="brand-text">Mario Ortega</span>
+        </a>
+        <nav aria-label="Principal">
+          <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#libros">Libros</a></li>
+            <li><a href="#biografia">Biografía</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <section class="hero-section">
+        <div class="container">
+          <p class="eyebrow">Sitio oficial</p>
+          <h1>MARIO ORTEGA</h1>
+          <p class="intro-copy">
+            Narrador de historias donde la memoria, el poder y la aventura se
+            cruzan en cada página.
+          </p>
+        </div>
+
+        <div class="hero-carousel" aria-label="Carrusel de imágenes destacadas">
+          <button class="carousel-btn prev" data-action="prev" aria-label="Imagen anterior">
+            &#10094;
+          </button>
+
+          <div class="carousel-track" id="heroTrack">
+            <article class="hero-slide is-active">
+              <img
+                src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1800&q=80"
+                alt="Mesa con libros abiertos y una lámpara cálida"
+              />
+              <div class="slide-caption">
+                <h2>La literatura como viaje</h2>
+                <p>Crónicas, novela y ensayo con mirada crítica.</p>
+              </div>
+            </article>
+            <article class="hero-slide">
+              <img
+                src="https://images.unsplash.com/photo-1455885666463-9a8f7b37f74f?auto=format&fit=crop&w=1800&q=80"
+                alt="Escritorio de madera con cuaderno y pluma"
+              />
+              <div class="slide-caption">
+                <h2>Historias con pulso contemporáneo</h2>
+                <p>Personajes intensos frente a dilemas morales.</p>
+              </div>
+            </article>
+            <article class="hero-slide">
+              <img
+                src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1800&q=80"
+                alt="Estantería de biblioteca con libros antiguos"
+              />
+              <div class="slide-caption">
+                <h2>Del archivo a la ficción</h2>
+                <p>Novela histórica con ritmo de thriller.</p>
+              </div>
+            </article>
+          </div>
+
+          <button class="carousel-btn next" data-action="next" aria-label="Siguiente imagen">
+            &#10095;
+          </button>
+        </div>
+        <div class="hero-dots" id="heroDots" aria-label="Selector de imágenes"></div>
+      </section>
+
+      <section class="books-section container" id="libros">
+        <div class="section-heading">
+          <p class="eyebrow">Obra</p>
+          <h2>Libros destacados</h2>
+          <p>
+            Una selección de títulos recientes de Mario Ortega.
+          </p>
+        </div>
+
+        <div class="books-carousel" aria-label="Carrusel de libros">
+          <button class="books-btn prev" id="booksPrev" aria-label="Libro anterior">
+            &#10094;
+          </button>
+          <div class="books-viewport">
+            <div class="books-track" id="booksTrack">
+              <article class="book-card">
+                <img
+                  src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=500&q=80"
+                  alt="Portada del libro El mapa de sal"
+                />
+                <div class="book-info">
+                  <h3>El mapa de sal</h3>
+                  <p>Novela histórica</p>
+                  <span>2021</span>
+                </div>
+              </article>
+              <article class="book-card">
+                <img
+                  src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=500&q=80"
+                  alt="Portada del libro La frontera de ceniza"
+                />
+                <div class="book-info">
+                  <h3>La frontera de ceniza</h3>
+                  <p>Thriller político</p>
+                  <span>2022</span>
+                </div>
+              </article>
+              <article class="book-card">
+                <img
+                  src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?auto=format&fit=crop&w=500&q=80"
+                  alt="Portada del libro Viento de artillería"
+                />
+                <div class="book-info">
+                  <h3>Viento de artillería</h3>
+                  <p>Aventura marítima</p>
+                  <span>2023</span>
+                </div>
+              </article>
+              <article class="book-card">
+                <img
+                  src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=500&q=80"
+                  alt="Portada del libro Los días del mercurio"
+                />
+                <div class="book-info">
+                  <h3>Los días del mercurio</h3>
+                  <p>Novela de espionaje</p>
+                  <span>2024</span>
+                </div>
+              </article>
+              <article class="book-card">
+                <img
+                  src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=500&q=80"
+                  alt="Portada del libro Anatomía del naufragio"
+                />
+                <div class="book-info">
+                  <h3>Anatomía del naufragio</h3>
+                  <p>Ensayo narrativo</p>
+                  <span>2025</span>
+                </div>
+              </article>
+            </div>
+          </div>
+          <button class="books-btn next" id="booksNext" aria-label="Siguiente libro">
+            &#10095;
+          </button>
+        </div>
+      </section>
+
+      <section class="bio-section container" id="biografia">
+        <h2>Biografía</h2>
+        <p>
+          Mario Ortega (Madrid, 1975) es novelista y articulista. Su obra combina
+          documentación rigurosa con una prosa ágil y personajes memorables. Ha
+          publicado en medios culturales y participado en festivales literarios
+          internacionales.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contacto">
+      <div class="container">
+        <p>© 2026 Mario Ortega · Sitio oficial</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
