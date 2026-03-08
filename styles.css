@@ -425,6 +425,62 @@ h1 {
   font-size: clamp(2rem, 3.6vw, 3.1rem);
 }
 
+.social-section {
+  padding: 1.8rem 0 0.4rem;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.social-card {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 10px 24px rgba(26, 37, 52, 0.08);
+}
+
+.social-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+}
+
+.social-card p {
+  color: var(--muted);
+  margin: 0 0 0.9rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 9px;
+  padding: 0.56rem 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.social-card.youtube .social-link {
+  background: #ff0033;
+}
+
+.social-card.instagram .social-link {
+  background: #c13584;
+}
+
+.social-card.tiktok .social-link {
+  background: #111111;
+}
+
+.social-link:hover,
+.social-link:focus {
+  opacity: 0.92;
+}
+
 .theme-section {
   padding: 2.2rem 0 0.5rem;
 }
@@ -649,6 +705,10 @@ h1 {
   }
 
   .theme-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-grid {
     grid-template-columns: 1fr;
   }
 
