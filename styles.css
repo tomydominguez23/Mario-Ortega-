@@ -99,7 +99,7 @@ img {
 }
 
 .hero-section {
-  padding: 1.4rem 0 1.5rem;
+  padding: 0 0 1.8rem;
 }
 
 .hero-top {
@@ -107,7 +107,7 @@ img {
   grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
   gap: 1.2rem;
   align-items: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0;
 }
 
 .eyebrow {
@@ -181,6 +181,14 @@ h1 {
   border: 1px solid var(--line);
   border-radius: 12px;
   padding: 0.85rem 0.95rem;
+}
+
+.author-panel .intro-copy {
+  margin-bottom: 1rem;
+}
+
+.author-panel .hero-metrics article {
+  background: #ffffff;
 }
 
 .hero-metrics strong {
@@ -282,7 +290,7 @@ h1 {
 }
 
 .hero-dots {
-  margin-top: 0.9rem;
+  margin-top: 0.7rem;
   display: flex;
   justify-content: center;
   gap: 0.45rem;
@@ -333,7 +341,7 @@ h1 {
 .books-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 1.1rem;
 }
 
 .book-card {
@@ -344,6 +352,12 @@ h1 {
   display: flex;
   flex-direction: column;
   box-shadow: 0 10px 25px rgba(26, 37, 52, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 38px rgba(26, 37, 52, 0.14);
 }
 
 .book-card img {
@@ -391,7 +405,15 @@ h1 {
 }
 
 .bio-section {
-  padding: 2.3rem 0 3.2rem;
+  padding: 2.5rem 0 3.2rem;
+}
+
+.author-panel {
+  border: 1px solid #ead7bc;
+  border-radius: 18px;
+  background: linear-gradient(120deg, #fdf8f1 0%, #f6f8fb 100%);
+  padding: 1.4rem;
+  margin-bottom: 1.2rem;
 }
 
 .bio-grid {
@@ -432,7 +454,7 @@ h1 {
 }
 
 .final-cta {
-  padding: 0 0 2.7rem;
+  padding: 0.3rem 0 2.7rem;
 }
 
 .final-cta-content {
