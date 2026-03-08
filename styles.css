@@ -331,6 +331,11 @@ h1 {
   gap: 1rem;
 }
 
+.upcoming-grid.single {
+  grid-template-columns: minmax(280px, 420px);
+  justify-content: center;
+}
+
 .upcoming-card {
   background: #ffffff;
   border: 1px solid var(--line);
@@ -382,6 +387,12 @@ h1 {
 .upcoming-info h3 {
   font-size: 1.2rem;
   margin-bottom: 0.45rem;
+}
+
+.upcoming-subtitle {
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+  font-size: 0.93rem;
 }
 
 .launch-timer {
