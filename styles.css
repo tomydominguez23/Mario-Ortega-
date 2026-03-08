@@ -389,6 +389,12 @@ h1 {
   margin-bottom: 0.45rem;
 }
 
+.upcoming-subtitle {
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+  font-size: 0.93rem;
+}
+
 .launch-timer {
   display: inline-flex;
   align-items: center;
