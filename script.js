@@ -41,63 +41,24 @@ function resetHeroAutoplay() {
   startHeroAutoplay();
 }
 
-renderHeroDots();
-startHeroAutoplay();
+if (heroSlides.length && heroDotsContainer && heroPrevBtn && heroNextBtn) {
+  renderHeroDots();
+  startHeroAutoplay();
 
-heroPrevBtn.addEventListener("click", () => {
-  setHeroSlide(heroIndex - 1);
-  resetHeroAutoplay();
-});
+  heroPrevBtn.addEventListener("click", () => {
+    setHeroSlide(heroIndex - 1);
+    resetHeroAutoplay();
+  });
 
-heroNextBtn.addEventListener("click", () => {
-  nextHeroSlide();
-  resetHeroAutoplay();
-});
+  heroNextBtn.addEventListener("click", () => {
+    nextHeroSlide();
+    resetHeroAutoplay();
+  });
 
-heroDotsContainer.addEventListener("click", (event) => {
-  const target = event.target;
-  if (!(target instanceof HTMLButtonElement) || !target.dataset.index) return;
-  setHeroSlide(Number(target.dataset.index));
-  resetHeroAutoplay();
-});
-
-const booksTrack = document.getElementById("booksTrack");
-const booksCards = Array.from(document.querySelectorAll(".book-card"));
-const booksPrevBtn = document.getElementById("booksPrev");
-const booksNextBtn = document.getElementById("booksNext");
-
-let booksIndex = 0;
-
-function getBooksVisible() {
-  if (window.innerWidth <= 700) return 1;
-  if (window.innerWidth <= 1000) return 2;
-  return 3;
+  heroDotsContainer.addEventListener("click", (event) => {
+    const target = event.target;
+    if (!(target instanceof HTMLButtonElement) || !target.dataset.index) return;
+    setHeroSlide(Number(target.dataset.index));
+    resetHeroAutoplay();
+  });
 }
-
-function updateBooksCarousel() {
-  const booksVisible = getBooksVisible();
-  const cardWidth = booksCards[0].getBoundingClientRect().width;
-  const gap = 16;
-  const maxIndex = Math.max(booksCards.length - booksVisible, 0);
-
-  booksIndex = Math.min(booksIndex, maxIndex);
-  booksTrack.style.transform = `translateX(-${booksIndex * (cardWidth + gap)}px)`;
-
-  booksPrevBtn.disabled = booksIndex === 0;
-  booksNextBtn.disabled = booksIndex >= maxIndex;
-  booksPrevBtn.style.opacity = booksPrevBtn.disabled ? "0.45" : "1";
-  booksNextBtn.style.opacity = booksNextBtn.disabled ? "0.45" : "1";
-}
-
-booksPrevBtn.addEventListener("click", () => {
-  booksIndex -= 1;
-  updateBooksCarousel();
-});
-
-booksNextBtn.addEventListener("click", () => {
-  booksIndex += 1;
-  updateBooksCarousel();
-});
-
-window.addEventListener("resize", updateBooksCarousel);
-window.addEventListener("load", updateBooksCarousel);
